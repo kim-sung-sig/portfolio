@@ -1,16 +1,31 @@
-window.onload = function(){
+$(function(){
     alert("본 페이지는 1920px에 최적화 되어있습니다.")
 
 
-    const modalBox = document.querySelector(".modal-box > span")
-    const modalImg = document.querySelector(".modal-img")
-    const close = document.querySelector(".close")
-    const bodyBack = document.querySelector("body")
 
-    modalBox.addEventListener('click',function(){
-        modalImg.style.display = 'block';
-    });
-    close.addEventListener('click',function(){
-        modalImg.style.display = 'none';
-    });
-}
+    $("#modal-box1").click(function(){
+        $("#modal-bg").show();
+        $("#modal-img1").show();
+    })
+    $("#modal-box2").click(function(){
+        $("#modal-bg").show();
+        $(`#modal-img2`).show();
+    })
+    $(`#modal-box3`).click(function(){
+        $("#modal-bg").show();
+        $(`#modal-img3`).show();
+    })
+    
+    $(".close").click(function(){
+        $("#modal-bg").hide();
+        $(".modal-img").hide();
+        $(".modal-img").scrollTop(0);
+    })
+    
+    $("#modal-bg").click(function(){
+        $("#modal-bg").hide();
+        $(".modal-img").hide();
+        $(".modal-img").scrollTop(0);
+    })
+
+})

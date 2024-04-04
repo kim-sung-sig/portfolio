@@ -18,7 +18,7 @@
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<script src="./js/script.js"></script>
@@ -26,6 +26,7 @@
 </head>
 
 <body>
+	<div id="modal-bg" style=" display: none;position: fixed; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.3); z-index: 950;"></div>
 	<div id="wrap">
 		<div class="inner">
 			<header>
@@ -41,8 +42,8 @@
 							<a href="#project">PROJECT</a>
 							<ul class="sub-menu">
 								<li><a href="#daangn">당근마켓</a></li>
-								<li><a href="javascipr:;">파이썬시각화(미완성)</a></li>
-								<li><a href="javascipr:;">블로그 및 게시판(미완성)</a></li>
+								<li><a href="#Jung">정블로그</a></li>
+								<li><a href="#Python">파이썬시각화프로젝트</a></li>
 							</ul>
 						</li>
 						<li><a href="#blog-git">BLOG & GIT</a></li>
@@ -145,31 +146,45 @@
 						<div class="main-title">
 							<p>진행해왔던 프로젝트입니다.</p>
 						</div>
+
+
 						<div class="content-inner">
 							<h4 id="daangn">1. 개인 프로젝트 - 당근마켓 (WEB)</h4>
 							<div class="project">
 								<div class="p-box">
 									<img src="./img/당근메인페이지ppt.png" alt="당근마켓">
-									<p class="modal-box"><span>자세히 보기</span></p>
+									<p class="modal-box" id="modal-box1"><span>자세히 보기</span></p>
 								</div>
-								<div class="modal-img">
+								<div class="modal-img" id="modal-img1">
 									<h2>당근마켓 상세페이지입니다</h2>
-									<img src="./img/project/당근/d1.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d2.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d3.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d4.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d5.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d6.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d7.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d8.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d9.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d10.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d11.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d12.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d13.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d14.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d15.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d16.PNG" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0001.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0002.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0003.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0004.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0005.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0006.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0007.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0008.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0009.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0010.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0011.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0012.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0013.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0014.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0015.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0016.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0017.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0018.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0019.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0020.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0021.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0022.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0023.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0024.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0025.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0026.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0027.jpg" alt="당근마켓_상세페이지">
+									<img src="./img/project/당근/김성식_당근마켓_포트폴리오_최종_page-0028.jpg" alt="당근마켓_상세페이지">
 									<button class="close">닫기</button>
 								</div>
 								<div class="p-infor">
@@ -220,37 +235,49 @@
 											<span class="text-bold">기여도</span>&nbsp;개인 100%
 										</p>
 										<p><span class="material-symbols-outlined">check_box</span>
-											<span class="text-bold">사용한 스킬</span>&nbsp;JavaㆍSpringBoot3ㆍMySqlㆍJavascriptㆍJQueryㆍAjax(Axios)
+											<span class="text-bold">사용한 스킬</span>&nbsp;<span class="text-wavy">Java</span>ㆍ<span class="text-wavy">SpringBoot3</span>ㆍ<span class="text-wavy">MyBatis</span>ㆍ<span class="text-wavy">MySql</span>ㆍJavascriptㆍJQueryㆍAjax(Axios)
 										</p>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="content-inner">
-							<h4 id="daangn">2. 팀 프로젝트 - 정블로그</h4>
+							<h4 id="Jung">2. 팀 프로젝트 - 정블로그</h4>
 							<div class="project">
 								<div class="p-box">
-									<img src="./img/파이썬메인페이지.png" alt="파이썬">
-									<p class="modal-box"><span>자세히 보기</span></p>
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0001.jpg" alt="파이썬">
+									<p class="modal-box" id="modal-box2"><span>자세히 보기</span></p>
 								</div>
-								<div class="modal-img">
-									<h2>당근마켓 상세페이지입니다</h2>
-									<img src="./img/project/당근/d1.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d2.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d3.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d4.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d5.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d6.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d7.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d8.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d9.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d10.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d11.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d12.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d13.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d14.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d15.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d16.PNG" alt="당근마켓_상세페이지">
+								<div class="modal-img" id="modal-img2">
+									<h2>정 블로그 상세페이지입니다</h2>
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0001.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0002.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0003.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0004.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0005.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0006.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0007.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0008.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0009.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0010.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0011.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0012.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0013.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0014.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0015.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0016.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0017.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0018.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0019.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0020.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0021.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0022.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0023.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0024.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0025.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0026.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0027.jpg" alt="정블로그_상세페이지">
+									<img src="./img/project/정블로그/정블로그 프로젝트_page-0028.jpg" alt="정블로그_상세페이지">
 									<button class="close">닫기</button>
 								</div>
 								<div class="p-infor">
@@ -260,23 +287,23 @@
 										</p>
 										<br>
 										<p>
-											1. 블로그<br>
+											1. <span class="text-wavy">블로그</span> - 웹에디터를 통한 글쓰기를 지원하는 블로그
 										</p>
 										<br>
 										<p>
-											2. 갤러리<br>
+											2. <span class="text-wavy">갤러리</span> - 서로의 사진을 공유하는 갤러리
 										</p>
 										<br>
 										<p>
-											3. 자료실<br>
+											3. <span class="text-wavy">자료실</span> - 파일을 업로드하고 다운로드할수 있는 자료실
 										</p>
 										<br>
 										<p>
-											4. 동영상<br>
+											4. <span class="text-wavy">동영상</span> - 유튜브 url을 활용한 동영상 게시판
 										</p>
 										<br>
 										<p>
-											5. 뉴스<br>
+											5. <span class="text-wavy">뉴스</span> - 한경RSS읽어 DB에 저장하여 뉴스와 대댓글이 가능한 게시판
 										</p>
 									</div>
 									<div class="line"></div>
@@ -289,13 +316,13 @@
 											<span class="text-bold">주요기능</span>&nbsp;회원 ㆍ 게시글당(CRUD) 및 댓글(CRUD)
 										</p>
 										<p><span class="material-symbols-outlined">check_box</span>
-											<span class="text-bold">기간 및 인원</span>&nbsp;2024.02 ~ 2024.04 (3명)
+											<span class="text-bold">기간 및 인원</span>&nbsp;2024.02 ~ 2024.04 (2명)
 										</p>
 										<p><span class="material-symbols-outlined">check_box</span>
-											<span class="text-bold">기여도</span>&nbsp;블로그게시판, 뉴스, 공지사항, 관리자페이지 및 전반적인 테이블설계
+											<span class="text-bold">기여도</span>&nbsp;동영상 게시판, 뉴스, 공지사항, 관리자페이지 및 전반적인 테이블설계
 										</p>
 										<p><span class="material-symbols-outlined">check_box</span>
-											<span class="text-bold">사용한 스킬</span>&nbsp;JavaㆍSpringBoot3ㆍOracleㆍJavascriptㆍJQueryㆍAjax(Axios)
+											<span class="text-bold">사용한 스킬</span>&nbsp;JavaㆍSpringBoot3ㆍ<span class="text-wavy">Oracle</span>ㆍJavascriptㆍJQueryㆍAjax(Axios)
 										</p>
 									</div>
 								</div>
@@ -305,33 +332,49 @@
 							<h4 id="Python">3. 팀 프로젝트 - 파이썬시각화프로젝트</h4>
 							<div class="project">
 								<div class="p-box">
-									<img src="./img/파이썬메인페이지.png" alt="파이썬">
-									<p class="modal-box"><span>자세히 보기</span></p>
+									<img src="./img/project/파이썬시각화/p1.jpg" alt="파이썬">
+									<p id="modal-box3" class="modal-box"><span>자세히 보기</span></p>
 								</div>
-								<div class="modal-img">
-									<h2>당근마켓 상세페이지입니다</h2>
-									<img src="./img/project/당근/d1.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d2.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d3.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d4.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d5.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d6.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d7.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d8.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d9.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d10.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d11.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d12.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d13.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d14.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d15.PNG" alt="당근마켓_상세페이지">
-									<img src="./img/project/당근/d16.PNG" alt="당근마켓_상세페이지">
+								<div class="modal-img" id="modal-img3">
+									<h2>파이썬시각화 상세페이지입니다</h2>
+									<img src="./img/project/파이썬시각화/p1.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p2.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p3.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p4.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p5.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p6.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p7.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p8.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p9.png" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p10.png" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p11.png" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p12.png" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p13.png" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p14.png" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p15.png" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p16.png" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p17.png" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p18.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p19.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p20.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p21.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p22.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p23.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p24.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p25.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p26.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p27.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p28.jpg" alt="프로젝트_상세페이지">
+									<img src="./img/project/파이썬시각화/p29.jpg" alt="프로젝트_상세페이지">
 									<button class="close">닫기</button>
 								</div>
 								<div class="p-infor">
 									<div class="infor1">
 										<p>
-											파이썬의 pandas와 ma<br>
+											파이썬 시각화프로젝트<br>
+											공공데이터포탈의 노인운전자 사고데이터를 파이썬의 다양한 라이브러리(matplotlib, Plotly, Folium등)를 이용해<br>
+											다양한 그래프(막대그래프, 원그래프, 꺾은선그래프, 산점도, 썬버스트, 히트맵, FoliumMap등)를 그렸습니다.<br>
+											그것을 html에 담아 사용자도 볼 수 있도록 <span class="text-wavy">시각화</span> 하였습니다.
 										</p>
 									</div>
 									<div class="line"></div>
@@ -347,15 +390,68 @@
 											<span class="text-bold">주요기능</span>&nbsp;노인운전사고를 파이썬을 이용하여 시각화하였습니다.
 										</p>
 										<p><span class="material-symbols-outlined">check_box</span>
-											<span class="text-bold">기간 및 인원</span>&nbsp;2024.01 ~ 2024.02 (3명)
+											<span class="text-bold">기간 및 인원</span>&nbsp;2024.01 ~ 2024.02 (2명)
 										</p>
 										<p><span class="material-symbols-outlined">check_box</span>
 											<span class="text-bold">기여도</span>
-											Folium, geopandas를 이용하여 지도로 시각화, 히트맵, 대부분의 그래프에서 동적으로 움직이게 추가, 썬버스트,<br>
+											Folium, geopandas를 이용하여 지도로 시각화, 히트맵<br>
+											<span style="margin-right: 200px;"></span>대부분의 그래프에 에니메이션추가하였습니다.<br>
 											<span style="margin-right: 200px;"></span>홈페이지처럼 볼 수 있도록 html작성 및 깃배포
 										</p>
 										<p><span class="material-symbols-outlined">check_box</span>
-											<span class="text-bold">사용한 스킬</span>&nbsp;PythonㆍPandasㆍGeopandasㆍFoliumㆍPlotlyㆍFlask
+											<span class="text-bold">사용한 스킬</span>&nbsp;PythonㆍPandasㆍGeopandasㆍ<span class="text-wavy">Folium</span>ㆍ<span class="text-wavy">Plotly</span>ㆍFlask
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="content-inner">
+							<h4 id="Python">4. 개인 프로젝트 - 진행중</h4>
+							<div class="project">
+								<div class="p-box">
+									<!--<img src="./img/project/파이썬시각화/p1.jpg" alt="파이썬">-->
+									
+									<p id="modal-box4" class="modal-box"><span>자세히 보기</span></p>
+								</div>
+								<div class="modal-img" id="modal-img4">
+									<h2>파이썬시각화 상세페이지입니다</h2>
+									<button class="close">닫기</button>
+								</div>
+								<div class="p-infor">
+									<div class="infor1">
+										<p>
+										</p>
+									</div>
+									<div class="line"></div>
+									<div class="infor2">
+										<p>
+											<span class="material-symbols-outlined">check_box</span>
+											<span class="text-bold">GITHUB</span>
+											&nbsp;<a href="" target="_blank"></a>
+										</p>
+										<p>
+											<span class="material-symbols-outlined">check_box</span>
+											<span class="text-bold">URL</span>
+											&nbsp;<a href="" target="_blank"></a>
+										</p>
+										<p>
+											<span class="material-symbols-outlined">check_box</span>
+											<span class="text-bold">주요기능</span>
+											&nbsp;
+										</p>
+										<p>
+											<span class="material-symbols-outlined">check_box</span>
+											<span class="text-bold">기간 및 인원</span>
+											&nbsp;2024.04 ~ 진행중
+										</p>
+										<p><span class="material-symbols-outlined">check_box</span>
+											<span class="text-bold">기여도</span>
+											
+										</p>
+										<p><span class="material-symbols-outlined">check_box</span>
+											<span class="text-bold">사용한 스킬</span>
+											&nbsp;
 										</p>
 									</div>
 								</div>

@@ -5,7 +5,7 @@ body {max-width: 100vw; height: 100vh; font-family: "Noto Sans KR"; color: #111;
 .inner {max-width: 100%; height: 100%; margin: 0 auto; display: flex; position: relative;}
 
 /* header */
-header {min-width: 300px; height: 100vh; background: linear-gradient(180deg, #aeb6c8,#486cbb); color: #fff; position: fixed; display: flex; flex-direction: column; align-items: center; z-index: 999; box-shadow: 0 0 10px #555;}
+header {min-width: 300px; height: 100vh; background: linear-gradient(180deg, #aeb6c8,#486cbb); color: #fff; position: fixed; display: flex; flex-direction: column; align-items: center; z-index: 900; box-shadow: 0 0 10px #555;}
 .main-img > h1 {width: 250px; padding-top: 30px;}
 .main-img > h1 > img {max-width: 100%; border-radius: 30px;}
 .main-img > h2 {font-size: 24px; text-align: center; font-family: "Noto Sans KR", sans-serif; font-weight: 300; padding-top: 50px;}
@@ -62,7 +62,7 @@ main {min-width: calc(100% - 300px); display: flex; flex-direction: column; posi
 .modal-box {display: flex; justify-content: center; margin-top: 20px; position: relative; }
 .modal-box > span {width: 200px; border-radius: 10px; border: 1px solid #555; padding: 10px 30px; cursor: pointer; text-align: center;}
 .modal-box > span:hover {background: #000; color: #fff;}
-.modal-img {display: none;  position: fixed; top: 50%; left: 60%; transform: translate(-60%, -50%); z-index: 999; width: 1000px; height: 500px; overflow: scroll; background: #fff; padding: 50px; border: 2px solid #555; }
+.modal-img {display: none;  position: fixed; top: 50%; left: 60%; transform: translate(-60%, -50%); z-index: 999; width: 1000px; height: 500px; overflow: scroll;overflow-x: hidden; background: #fff; padding: 50px; border: 2px solid #555; }
 .modal-img > img{max-width: 100%; margin-top: 50px;}
 .close {position: absolute; top: 30px; right: 50px; font-size: 30px; font-size: 20px; background: #ccc; color: #333; border-radius: 5px; padding: 5px 20px; transition: all 0.3s;}
 .close:hover {background: #000; color: #fff;}
